@@ -1,37 +1,40 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>Yüzde Hesaplama Aracı</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>NGINX on Railway</title>
-    <meta name="description" content="Choo Choo!" />
+    <div class="container">
+        <h2>Yüzde Hesaplama Aracı</h2>
 
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <div class="input-container">
+            <label for="number1" class="label-spacing">%50'si alınacak Sayı:</label>
+            <input type="number" id="number1" name="number1">
+        </div>
 
-    <link rel="stylesheet" href="/styles.css?v=1.0" />
-  </head>
+        <div class="input-container">
+            <label for="number2" class="label-spacing">%25'i alınacak Sayı:</label>
+            <input type="number" id="number2" name="number2">
+        </div>
 
-  <body>
-    <main>
-      <img
-        src="https://railway.app/brand/logo-light.svg"
-        alt="Railway logo"
-        class="logo"
-      />
+        <div class="input-container">
+            <label for="number3" class="label-spacing">%25'i Alınacak Sayı:</label>
+            <input type="number" id="number3" name="number3">
+        </div>
 
-      <h1>NGINX on Railway</h1>
+        <button onclick="calculate()">Hesapla</button>
 
-      <p>
-        Choo Choo! This is an example of an NGINX static site running on
-        Railway.
-        <a
-          href="https://github.com/railwayapp/starters/tree/master/examples/nginx"
-          >View source</a
-        >.
-      </p>
-    </main>
+        <div class="result-container">
+            <label for="result">Sonuç:</label>
+            <p id="result"></p>
+        </div>
+    </div>
 
-    <script src="/script.js"></script>
-  </body>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
